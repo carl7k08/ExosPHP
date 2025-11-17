@@ -1,7 +1,7 @@
 <?php
 
 function fairePyramide($taille) {
-    
+
     $etage = 1;
 
     while ($etage <= $taille) {
@@ -13,7 +13,7 @@ function fairePyramide($taille) {
             $compteur++;
         }
 
-        echo "\n";
+        echo "<br>";
         $etage++;
     }
 }
