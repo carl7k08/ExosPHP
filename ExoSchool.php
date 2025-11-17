@@ -21,9 +21,9 @@ function determinerNiveauScolaire($age) {
     }
 }
 
-echo "2 ans : " . determinerNiveauScolaire(2) . "\n";
-echo "8 ans : " . determinerNiveauScolaire(8) . "\n";
-echo "17 ans : " . determinerNiveauScolaire(17) . "\n";
-echo "25 ans : " . determinerNiveauScolaire(25) . "\n";
+echo "2 ans : " . determinerNiveauScolaire(2) . "<br>";
+echo "8 ans : " . determinerNiveauScolaire(8) . "<br>";
+echo "17 ans : " . determinerNiveauScolaire(17) . "<br>";
+echo "25 ans : " . determinerNiveauScolaire(25) . "<br>";
 
 ?>
