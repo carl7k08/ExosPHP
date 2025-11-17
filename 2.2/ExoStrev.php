@@ -1,17 +1,13 @@
 <?php
-
-function my_strrev($chaine) {
-    $resultat = "";
-    $longueur = strlen($chaine);
-
-    for ($i = $longueur - 1; $i >= 0; $i--) {
-        $resultat .= $chaine[$i];
+ 
+function my_strrev($str) {
+    $length = strlen($str);
+    $result = "";
+    $i = $length - 1;
+    while ($i >= 0) {
+        $result = $result . $str[$i];
+        $i = $i - 1;
     }
-
-    return $resultat;
+    return $result;
 }
-
-$texte = "Bonjour";
-echo my_strrev($texte);
-
-?>
+echo my_strrev("Bonjour le monde !");
