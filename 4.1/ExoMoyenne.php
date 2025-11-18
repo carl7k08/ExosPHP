@@ -18,6 +18,6 @@ foreach ($eleves as $eleve) {
     } else {
         $moyenne = 0;
     }
-    echo "L'élève $nom a une moyenne de : $moyenne\n";
+    echo "L'élève $nom a une moyenne de : $moyenne<br>";
 }
 ?>

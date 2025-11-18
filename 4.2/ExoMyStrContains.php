@@ -31,10 +31,10 @@ function affichage($resultat) {
     return $resultat ? "VRAI" : "FAUX";
 }
 
-echo "1: " . affichage(my_str_contains("bonjour", "bonjour tout le monde")) . "\n";
-echo "2: " . affichage(my_str_contains("bonjour tout le monde", "bonjour")) . "\n";
-echo "3: " . affichage(my_str_contains("le bonjour le monde", "le m")) . "\n";
-echo "4: " . affichage(my_str_contains("bonjour le monde", "monde")) . "\n";
-echo "5: " . affichage(my_str_contains("bonjour le monde", "monde est grand")) . "\n";
+echo "1: " . affichage(my_str_contains("bonjour", "bonjour tout le monde")) . "<br>";
+echo "2: " . affichage(my_str_contains("bonjour tout le monde", "bonjour")) . "<br>";
+echo "3: " . affichage(my_str_contains("le bonjour le monde", "le m")) . "<br>";
+echo "4: " . affichage(my_str_contains("bonjour le monde", "monde")) . "<br>";
+echo "5: " . affichage(my_str_contains("bonjour le monde", "monde est grand")) . "<br>";
 
 ?>
