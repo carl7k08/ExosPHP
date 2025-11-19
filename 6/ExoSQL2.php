@@ -1,5 +1,4 @@
 <?php
-
 try {
     $dbh = new PDO('mysql:host=localhost;dbname=jo;charset=utf8', 'root', '');
 } catch (PDOException $e) {
@@ -20,8 +19,10 @@ if (isset($_GET['dir']) && $_GET['dir'] === 'DESC') {
 }
 
 $sql = "SELECT * FROM jo.`100` ORDER BY `$col` $ordre";
+
 $sth = $dbh->prepare($sql);
 $sth->execute();
+
 $data = $sth->fetchAll(PDO::FETCH_ASSOC);
 $ordre_inverse = ($ordre === 'ASC') ? 'DESC' : 'ASC';
 $fleche = ($ordre === 'ASC') ? '↑' : '↓';
