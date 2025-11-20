@@ -1,7 +1,11 @@
 <?php
 
 try {
-    $dbh = new PDO(dsn: 'mysql:host=localhost;dbname=jo;charset=utf8', username: 'root', password: '' );
+    $dbh = new PDO(
+        dsn: 'mysql:host=localhost;dbname=jo;charset=utf8',
+        username: 'root',
+        password: ''
+    );
 } catch (PDOException $e) {
     die($e->getMessage());
 }
